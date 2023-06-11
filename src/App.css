@@ -1,0 +1,159 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  color: white !important;
+}
+
+.ul li {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+.loader_li{
+  position: relative;
+  padding: 30px 0px;
+  height: 40px;
+}
+.ul {
+  height: 60vh;
+  overflow-y: auto;
+  position: relative;
+  flex-direction: column-reverse;
+  margin-bottom: 7vh;
+}
+.ul::-webkit-scrollbar {
+  width: 8px;
+}
+.ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: orange;
+}
+.ul{
+  flex-direction: column-reverse;
+}
+.ul li h1 {
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+}
+.ul li h2{
+  display: flex;
+  margin-top: 5px;
+}
+.ul li h2 img, .ul li h1 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+.loader_container {
+  width: 100vw;
+}
+
+
+.loader--dot {
+  animation-name: loader;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: red;
+  border: 2px solid white;
+}
+
+@keyframes loader {
+  15%
+   {
+     opacity: 0;
+   }
+  
+  45%
+    {
+      opacity: 1;
+    }
+
+  65%
+    {
+      opacity: 1;
+    }
+  
+  95%
+    {
+      opacity: 0;
+    }
+}
+  
+
+
+
+.img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border: 2px solid orange;
+  border-radius: 8px;
+}
+.links a {
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 10px;
+
+  border-bottom: 2px solid black;
+}
+
+.links a.active {
+  background-color: orange;
+  color: white !important;
+}
+
+.navbar {
+  margin-top: 20px;
+  padding: 0px 40px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+.logo span {
+  color: orange;
+}
+
+
+.block{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+@media (max-width: 567px){
+  .logo{
+    font-size: 24px;
+  }
+  .links a{
+    font-size: 14px;
+    padding: 2px 6px;
+    margin: 0 auto;
+  }
+  .navbar{
+    justify-content: center !important;
+    gap: 10%;
+    width: 100%;
+  }
+  .links {
+    margin-top: 10px;
+  }
+  .links{
+    display: flex;
+    gap: 10px;
+  }
+  input{
+    font-size: 20px !important;
+  }
+}
